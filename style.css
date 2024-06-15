@@ -320,9 +320,50 @@ html{
   flex: 1;
   cursor: pointer;
   text-align: center;
+  position: relative;
 }
 .header-3 li:hover{
   background-color: #ef491c;
+}
+
+.header-3 li:hover ul{
+  display: block;
+}
+.header-3 ul {
+  z-index: 99;
+  list-style: none;
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  border: 1px solid #eee;
+  min-width: 100%;
+}
+.header-3 ul li a {
+  color: #333;
+  text-align: start;
+  padding: 0 10px;
+}
+.header-3 ul li a:hover {
+  color: var(--mau-chudao);
+  background-color: #fff;
+}
+.luachon-protein{
+
+}
+.luachon-sua{
+
+}
+.luachon-workout{
+
+}
+.luachon-bcaa{
+
+}
+.luachon-sanphamdacbiet{
+
+}
+.luachon-herb{
+
 }
 /* ------------------------------------------------------------------ */
 .main{
