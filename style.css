@@ -1,0 +1,155 @@
+:root{
+    --mau-chudao: #fc4d1e;
+    --mau-chusanpham: #656565;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.khung-1{
+  background-color: #fff;
+  height: 35px;
+  line-height: 35px;
+  color: #333;
+}
+.header-1{
+  width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------------------------------------------------------------------ */
+.topbar-trai{
+  display: flex;
+  align-items: center;
+}
+.topbar-trai-sdt{
+  color: #333;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 16px;
+}
+.topbar-trai-sdt:hover{
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------ */
+.topbar-phai{
+  display: flex;
+}
+
+.thong-tin{
+  
+}
+.thong-tin a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 12px;
+  padding-left: 6px;
+}
+.thong-tin a:hover{
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------ */
+.form-header-input{
+  position: relative;
+}
+.form-header-input input{
+    padding: 8px 50px 5px 12px;
+    border-radius: 35px;
+    border: solid 1px var(--mau-chusanpham);
+}
+.form-header-input i{
+  position: absolute;
+  top: 10px;
+  left: 87%;
+  color: var(--mau-chusanpham);
+}
+.form-header-input i:hover{
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------ */
+
+.khung-2{
+  background-color: #fff;
+  height: 35px;
+  line-height: 35px;
+  color: #333;
+}
+.header-2{
+  width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header2-trai{
+
+}
+.header2-phai{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+.thongtin-cuahang{
+  display: flex;
+  align-items: center;
+}
+.diachi-cuahang{
+  color: var(--mau-chudao);
+  margin-right: 10px;
+}
+.nhapkhau-cuahang{
+
+}
+.gio-hang{
+
+}
+/* ------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+.footer{
+  margin-top: 600px;
+  height: 300px;
+  color: #333;
+  background-color: #333;
+}
+.khung-footer{
+  width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.khung-footer h1{
+  color: var(--mau-chudao);
+}
+.footer-cuahang{
+
+}
+.footer-chinhsach{
+
+}
+.footer-vechungtoi{
+
+}
+.footer-like{
+
+}
