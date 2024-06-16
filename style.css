@@ -426,22 +426,45 @@ html{
 /* ------------------------------------------------------------------ */
 
 .content-sanpham{
-
+  margin-top: 24px;
 }
 .content-sanpham-loai{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--mau-chudao);
+}
+.content-sanpham-loai h3{
+  font-size: 12px;
+  border-bottom: 4px solid var(--mau-chudao);
+  padding: 0 12px 4px 0;
+}
+.content-sanpham-loai a{
+  font-size: 11px;
+  color: var(--mau-chudao);
+}
+.content-sanpham-loai a:hover{
+  color: #333;
 }
 /* ------------------------------------------------------------------ */
 .content-sanpham-chitiet{
-  
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin-left: -5px;
 }
 .content-sanpham-item{
+  flex: 0 0 calc(100% / 6);
+  max-width: calc((100% / 6) - 10px);
   display: flex;
   flex-direction: column;
-  max-width: 16.6%;
-  min-width: 16%;
-  transition: all 2s ease;
+  transition: all 1s ease;
+  border: 1px solid #fff;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
 }
 .content-sanpham-item:hover{
   border: 1px solid #333;
@@ -449,6 +472,7 @@ html{
 .content-sanpham-item:hover .sanpham-chitiet{
   bottom: 0;
 }
+
 .baotrum-sanpham-img{
   position: relative;
   overflow: hidden;
@@ -471,8 +495,43 @@ html{
   padding: 6px 0;
   
 }
+.sanpham-search i{
+  display: none;
+  transition: all .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  color: var(--mau-chudao);
+  text-decoration: none;
+  font-size: 32px;
+}
+.content-sanpham-item:hover .sanpham-search i{
+  display: block;
+}
+.sanpham-search i:hover{
+  color: #333;
+}
+.sanpham-search-2 i{
+  display: none;
+  transition: all .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  color: var(--mau-chudao);
+  text-decoration: none;
+  font-size: 32px;
+}
+.content-sanpham-item:hover .sanpham-search-2 i{
+  display: block;
+}
+.sanpham-search-2 i:hover{
+  color: #222;
+  opacity: 0.5;
+}
 .sanpham-chitiet:hover{
-  filter: brightness(1.1);
+  filter: brightness(1);
   background-color: #ffd40e;
 }
 /* ------------------------------------------------------------------ */
