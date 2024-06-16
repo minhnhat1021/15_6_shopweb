@@ -413,7 +413,9 @@ html {
   filter: brightness(1.5);
 }
 /* ------------------------------------------------------------------ */
-
+.content{
+  padding-top: 24px;
+}
 .content-sanpham {
   margin-top: 24px;
 }
