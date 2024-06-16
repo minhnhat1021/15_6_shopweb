@@ -8,6 +8,8 @@
 .thanhtoan-trai{
     flex: 0 0 calc((100% / 6)* 3.1);
     max-width: calc((100% / 6)* 3.1);
+    padding: 50px 10px 0 0;
+    background-color: #fff;
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -19,6 +21,136 @@
     padding: 50px 10px 0 6%;
     background-color: #fafafa;
 }
+/* ----------------------------------------------------------------------------- */
+.thongtin-nguoimua{
+    display: flex;
+    flex-direction: column;
+}
+.header-thongtin-nguoimua{
+
+}
+.header-thongtin-nguoimua > a{
+    font-size: 28px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #333;
+}
+.thongtin-nguoimua-giohang{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 16px;
+}
+.thongtin-nguoimua-giohang a{
+    text-decoration: none;
+    color: #338dbc;
+}
+.thongtin-nguoimua-giohang a:hover{
+    filter: brightness(1.2);
+}
+.thongtin-nguoimua-giohang i,
+.thongtin-nguoimua-giohang p:last-child{
+    color: #999999;
+}
+
+/* ----------------------------------------------------------------------------- */
+.thongtin-giaohang{
+    margin-top: 16px;
+}
+.thongtin-giaohang h3{
+    font-size: 18px;
+    font-weight: 200;
+    color: #333;
+}
+.noidung-thongtin-nguoimua{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+.noidung-thongtin-nguoimua img{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.thongtin-nguoimua-text{
+    margin-right: 240px;
+    line-height: 20px;
+}
+.thongtin-nguoimua-text p{
+    color: #737373;
+    font-size: 14px;
+}
+.thongtin-nguoimua-text a{
+    text-decoration: none;
+    color: #338dbc;
+    font-size: 14px;
+}
+.thongtin-nguoimua-text a:hover{
+    filter: brightness(1.2);
+}
+/* ----------------------------------------------------------------------------- */
+.content-thongtin-nguoimua{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.content-thongtin-nguoimua input,
+.content-thongtin-nguoimua select{
+    padding: 13px 39px 13px 12px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all .5s linear;
+    outline-color: #fff;
+}
+.content-thongtin-nguoimua input:focus,
+.content-thongtin-nguoimua select:focus{
+    outline-color: #338dbc;
+}
+#diachi option{
+    padding: 10px 0;
+}
+.thongtin-nguoimua-tinhhuyen{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#diachi-tinh{
+
+}
+#diachi-huyen{
+
+}
+/* ----------------------------------------------------------------------------- */
+.footer-thongtin-nguoimua{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.footer-thongtin-nguoimua a{
+    text-decoration: none;
+    color: #338dbc;
+    font-size: 14px;
+
+}
+.footer-thongtin-nguoimua a:hover{
+    filter: brightness(1.2);
+}
+.footer-thongtin-nguoimua button{
+    padding: 19px 23px;
+    background-color: #338dbc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 
 /* ----------------------------------------------------------------------------- */
 
@@ -57,11 +189,12 @@
 
 .thanhtoan-giohang-thongtin {
     margin-left: -140px;
+    line-height: 20px;
 }
 .thanhtoan-giohang-ten p{
     color: #333;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 100;
 }
 
 .thanhtoan-giohang-mota {
@@ -98,7 +231,8 @@
     color: #fff;
     border-radius: 4px;
 }
-.thongtin-thanhtoan-input input:focus .thongtin-thanhtoan-input button {
+.thongtin-thanhtoan-input input:valid + button,
+.thongtin-thanhtoan-input input:focus:valid + button {
     background-color: #338dbc;
 }
 /* ----------------------------------------------------------------------------- */
@@ -120,7 +254,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
+    padding-top: 12px;
 
 }
 
@@ -143,3 +277,35 @@
     font-weight: 600;
 }
 /* ----------------------------------------------------------------------------- */
+
+
+
+  
+
+#customSelect {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow in Safari */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><path d="M6 9l6 6 6-6"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 16px 16px;
+  }
+  
+  /* Custom styling for the option elements */
+  #customSelect option {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #customSelect:focus {
+    border-color: #0056b3;
+    outline: none;
+  }
